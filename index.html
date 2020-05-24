@@ -5,53 +5,55 @@
 		<meta charset="utf-8">
 
 		<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/utility.css">
 
-		<script src="https://kit.fontawesome.com/79b1e8dad1.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
 	</head>
 
 	<body>
-		<header id="header">
-			<div class="flex-cont">
-				<div >
-					<a class="logo" href="">Minimax</a>
-				</div>
+		<header class="d-flex justify-between" id="header">        
+            <div>
+                <h2><a class="bg-primary text-white d-block" href="">Minimax</a></h2>
+            </div>
 
-				<div class="btn-div">
-					<button class="btn-hambug"><i class="fas fa-bars"></i></button>
-				</div>
-			</div>
-
-			<nav class="nav-header">				
-				<ul>
-					<li><a href="">Home</a></li>
-					<li><a href="">Service</a></li>
-					<li><a href="">About</a></li>
-					<li><a href="">Portfolio</a></li>
-					<li><a href="">Price</a></li>
-					<li><a class="border-none" href="">Contact</a></li>
+            <div>
+                <button>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+			
+			<nav>				
+				<ul class="d-flex">
+					<li><a class="btn d-block" href="#">Home</a></li>
+					<li><a class="d-block" href="#service">Service</a></li>
+					<li><a class="d-block" href="#about">About</a></li>
+					<li><a class="d-block" href="#portfolio">Portfolio</a></li>
+					<li><a class="d-block" href="#price">Price</a></li>
+					<li><a class="d-block" href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
 
-		<section class="banner">
-			<div class="banner-txt">
+		<section>
+			<div>
 				<h2>Welcome to</h2>
-				<h1>Minimax <strong>Digital Firm</strong></h1>
+				<h1 class="text-primary">Minimax <strong>Digital Firm</strong></h1>
 				<p>
 					Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.
 				</p>
-				<a href="#">Get Started</a>
+				<a class="btn btn--md bg-hover border-black" href="#">Get Started</a>
 			</div>
 		</section>
 
-		<main id="main">		
-			<section class="workflow">
-				<div class="title-center">
-					<h2 class="border-left">Our Workflow</h2>
-				</div>
-				<div class="workflow-flex">
-					<div class="workflow-itens">
+		<main>		
+			<section class="container py-3 border-bottom" id="service">			
+                <div class="align-center"><h2 class="title border-left">Our Workflow</h2></div>
+
+				<div class="d-grid col-3 gap-2">
+					<div>
 						<i class="fas fa-cubes"></i>
 						<h3>Research</h3>
 						<p>
@@ -59,7 +61,7 @@
 						</p>
 					</div>
 
-					<div class="workflow-itens">
+					<div>
 						<i class="fas fa-cogs"></i>
 						<h3>Design</h3>
 						<p>
@@ -67,7 +69,7 @@
 						</p>
 					</div>
 
-					<div class="workflow-itens">
+					<div>
 						<i class="fas fa-users"></i>
 						<h3>Implement</h3>
 						<p>
@@ -77,17 +79,15 @@
 				</div>		
 			</section>
 
-			<section class="story">
-				<div class="title-center">
-					<h2 class="border-right">Minimax Story</h2>
-				</div>
-
-				<div class="story-flex">
-					<div class="story-img">
+			<section class="container py-3 border-bottom" id="about">				
+                <div class="align-center"><h2 class="title border-right">Minimax Story</h2></div>
+				
+				<div>
+					<div>
 						<a href="#"><img src="images/about-img.jpg"></a>
 					</div>
 
-					<div class="story-txt">
+					<div>
 						<h3>About Us</h3>
 						<h4>Talented Designers & Developers</h4>
 						<p>
@@ -100,30 +100,29 @@
 				</div>
 			</section>
 
-			<section class="people">
-				<div class="title-center">
-					<h2 class="border-left">People behind the firm</h2>
-				</div>
-				<div class="people-flex">
-					<div class="people-itens">
+			<section class="container py-3 border-bottom">				
+                <div class="align-center"><h2 class="title border-left">People behind the firm</h2></div>
+				
+				<div>
+					<div>
 						<a href="#"><img src="images/team1.jpg"></a>
 						<h3>Jonny Thinker</h3>
 						<h4>Creative Director</h4>
 					</div>
 
-					<div class="people-itens">
+					<div>
 						<a href="#"><img src="images/team2.jpg"></a>
 						<h3>Michael</h3>
 						<h4>CEO / CC-founder</h4>
 					</div>
 
-					<div class="people-itens">
+					<div>
 						<a href="#"><img src="images/team3.jpg"></a>
 						<h3>George Walker</h3>
 						<h4>Chief Designer</h4>
 					</div>
 
-					<div class="people-itens">
+					<div>
 						<a href="#"><img src="images/team4.jpg"></a>
 						<h3>Mary Sandar</h3>
 						<h4>UX Specialist</h4>
@@ -131,109 +130,105 @@
 				</div>
 			</section>
 
-			<section class="portfolio">
-				<div class="title-center">
-					<h2 class="border-right">Our Portfolio</h2>
-				</div>
-				<nav class="nav-portfolio">					
-					<button class="links selected" onclick="filterSelection('all')">All</button>
-					<button class="links" onclick="filterSelection('html')">HTML</button>
-					<button class="links" onclick="filterSelection('photo')">Photoshop</button>
-					<button class="links" onclick="filterSelection('word')">Wordpress</button>
-					<button class="links" onclick="filterSelection('mobile')">Mobile</button>
+			<section class="container py-3 border-bottom" id="portfolio">				
+                <div class="align-center"><h2 class="title border-right">Our Portfolio</h2></div>
+				
+				<nav>					
+					<button onclick="filterSelection('all')">All</button>
+					<button onclick="filterSelection('html')">HTML</button>
+					<button onclick="filterSelection('photo')">Photoshop</button>
+					<button onclick="filterSelection('word')">Wordpress</button>
+					<button onclick="filterSelection('mobile')">Mobile</button>
 				</nav>
 
-				<div class="portfolio-img">
-					<a class="all html photo word mobile" href="#">
+				<div>
+					<a href="#">
 						<img src="images/portfolio-img1.jpg">
 					</a>
 
-					<a class="all html word mobile" href="#">
+					<a href="#">
 						<img src="images/portfolio-img2.jpg">
 					</a>
 
-					<a class="all word" href="#">
+					<a href="#">
 						<img src="images/portfolio-img3.jpg">
 					</a>
 					
-					<a class="all html mobile img-half" href="#">
+					<a href="#">
 						<img src="images/portfolio-img4.jpg">
 					</a>
 					
-					<a class="all word img-half" href="#">
+					<a href="#">
 						<img src="images/portfolio-img5.jpg">
 					</a>
 					
-					<a class="all html photo" href="#">
+					<a href="#">
 						<img src="images/portfolio-img6.jpg">
 					</a>
 					
-					<a class="all photo" href="#">
+					<a href="#">
 						<img src="images/portfolio-img7.jpg">
 					</a>
 					
-					<a class="all word" href="#">
+					<a href="#">
 						<img src="images/portfolio-img8.jpg">
 					</a>
 				</div>
 			</section>
 
-			<section class="price">
-				<div class="title-center">
-					<h2 class="border-left">Our Pricing</h2>
-				</div>
-
-				<div class="price-flex">
-					<div class="plan">
+			<section class="container py-3 border-bottom" id="price">				
+                <div class="align-center"><h2 class="title border-left">Our Pricing</h2></div>
+				
+				<div class="align-center d-grid col-3 gap-2">
+					<div class="border-black py-3 px-1">
 						<h3>Starter</h3>
-						<small>$100 per month</small>
+						<small class="d-block my-1">$100 per month</small>
 						<ul>
-							<li>100 gb storage</li>
-							<li>10 tb bandwidth</li>
-							<li>10 basic themes</li>
-							<li>24-hour response</li>
+							<li class="my-1">100 gb storage</li>
+							<li class="my-1">10 tb bandwidth</li>
+							<li class="my-1">10 basic themes</li>
+							<li class="my-1">24-hour response</li>
 						</ul>
-						<a href="#">Sign Up</a>
+						<a class="btn btn--sm border-black" href="#">Sign Up</a>
 					</div>
 
-					<div class="plan">
+					<div class="border-black py-3 px-1">
 						<h3>Business</h3>
-						<small>$350 per month</small>
+						<small class="d-block my-1">$350 per month</small>
 						<ul>
-							<li>1.000 gb storage</li>
-							<li>50 tb bandwidth</li>
-							<li>50 pro themes</li>
-							<li>1-hour response</li>
+							<li class="my-1">1.000 gb storage</li>
+							<li class="my-1">50 tb bandwidth</li>
+							<li class="my-1">50 pro themes</li>
+							<li class="my-1">1-hour response</li>
 						</ul>
-						<a href="#">Sign Up</a>
+						<a class="btn btn--sm border-black" href="#">Sign Up</a>
 					</div>
 
-					<div class="plan">
+					<div class="border-black py-3 px-1">
 						<h3>Advanced</h3>
-						<small>$500 per month</small>
+						<small class="d-block my-1">$500 per month</small>
 						<ul>
-							<li>2.000 gb storage</li>
-							<li>100 tb bandwidth</li>
-							<li>100 premium themes</li>
-							<li>30-min response</li>
+							<li class="my-1">2.000 gb storage</li>
+							<li class="my-1">100 tb bandwidth</li>
+							<li class="my-1">100 premium themes</li>
+							<li class="my-1">30-min response</li>
 						</ul>
-						<a href="#">Sign Up</a>
+						<a class="btn btn--sm border-black" href="#">Sign Up</a>
 					</div>
 				</div>
 			</section>
 
-			<section>
-				<div class="title-center">
-					<h2 class="border-right">Keep in touch</h2>
-				</div>
-				<form class="formulario">
-					<div class="form-flex">
-						<input class="input-half" type="text" name="" placeholder="Name">
-						<input class="input-half" type="email" name="" placeholder="Email">
+			<section class="container py-3 border-bottom" id="contact">				
+                <div class="align-center"><h2 class="title border-right">Keep in touch</h2></div>
+				
+				<form>
+					<div class="d-grid col-2 column-gap-2">
+						<input class="border-black w-100 my-1 pxy-1" type="text" name="" placeholder="Name">
+						<input class="border-black w-100 my-1 pxy-1" type="email" name="" placeholder="Email">
 					</div>
-					<input type="text" name="" placeholder="Subject">
-					<textarea placeholder="Message" rows="6"></textarea>
-					<div class="form-flex">
+					<input class="border-black w-100 my-1 pxy-1" type="text" name="" placeholder="Subject">
+					<textarea class="border-black w-100 my-1 pxy-1" placeholder="Message" rows="6"></textarea>
+					<div>
 						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy</p>
 						<input type="submit" value="Send Message">
 					</div>
@@ -241,20 +236,20 @@
 			</section>
 		</main>
 
-		<footer class="footer">
-			<div class="footer-flex">
-				<div class="adr-footer">
+		<footer class="container py-3">
+			<div>
+				<div>
 					<h2>Our Office</h2>
-					<div class="contact">
-						<address>101 Clean Street, California, CA 10110</address>
-						<p>Email: <strong>hello@company.com</strong></p>
-						<p>Phone: <strong>010-020-0340</strong></p>
+					<div>
+						<address class="my-1">101 Clean Street, California, CA 10110</address>
+						<p class="my-1">Email: <address>hello@company.com</address></p>
+						<p class="my-1">Phone: <address>010-020-0340</address></p>
 					</div>
 				</div>
 
-				<div class="adr-footer">
+				<div>
 					<h2>Social Us</h2>
-					<div class="social">
+					<div>
 						<a href="#"><i class="fab fa-facebook-square"></i></a>
 						<a href="#"><i class="fab fa-instagram"></i></a>
 						<a href="#"><i class="fab fa-twitter-square"></i></a>
@@ -263,12 +258,11 @@
 				</div>
 			</div>
 
-			<div class="footer-copy">
-				<p>Copyright © 2016 Minimax Digital Firm - Design: tooplate</p>
-			</div>
+            <p class="align-center">Copyright © 2016 Minimax Digital Firm - Design: tooplate</p>
+		
 		</footer>
 
-		<a id="top-btn" href="#"><i class="fas fa-angle-up"></i></a>
+		<a class="bg-primary" href="#"><i class="fas fa-angle-up"></i></a>
 
 		<script src="js/menu.js"></script>
 		<script src="js/filter.js"></script>
