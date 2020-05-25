@@ -34,30 +34,40 @@
 
 .title {   
     font-size: 2.2rem;
-    padding: 1rem;
     display: inline-block;
     font-weight: normal;
-    margin-bottom: 2rem;
+}
+
+.border-top {
+    border-top: 2px solid;
 }
 
 .border-left {
-    border-left: 2px solid rgb(255, 219, 77);
+    border-left: 2px solid;
 }
 
 .border-right {
-    border-right: 2px solid rgb(255, 219, 77);
+    border-right: 2px solid;
 }
 
 .border-bottom {
-    border-bottom: 1px solid rgb(255, 219, 77);
+    border-bottom: 1px solid;
 }
 
 .text-primary {
     color: rgb(255, 219, 77);
 }
 
+.text-darker {
+    color: rgba(0, 0, 0, 0.5);
+}
+
 .text-white {
     color: #fff;
+}
+
+.text-hover:hover {
+    color: rgb(255, 219, 77);
 }
 
 .bg-primary {
@@ -77,6 +87,14 @@
     margin-bottom: 1rem;
 }
 
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.mb-4 {
+    margin-bottom: 4rem;
+}
+
 .pxy-1 {
     padding: 1rem;
 }
@@ -86,13 +104,38 @@
     padding-right: 1rem;
 }
 
+.pb-1 {
+    padding-bottom: 1rem;
+}
+
+.pt-3 {
+    padding-top: 3rem;
+}
+
+.py-1 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 .py-3 {
     padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
-.border-black {
-    border: 2px solid #000;
+.border {
+    border: 2px solid;
+}
+
+.border--black {
+    border-color: #000;
+}
+
+.border--primary {
+    border-color: rgb(255, 219, 77);
+}
+
+.border--gray {
+    border-color: rgb(182, 182, 182);
 }
 
 .d-flex {
@@ -108,12 +151,18 @@
 }
 
 @media (min-width: 768px) {
-    .col-2 {
+    .col-2, .col-4 {
         grid-template-columns: 1fr 1fr;
     }
 
     .col-3 {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .col-4 {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -132,6 +181,15 @@
 .btn {
     cursor: pointer;
     text-transform: uppercase;
+}
+
+.btn-fixed {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
 }
 
 .btn--sm {
