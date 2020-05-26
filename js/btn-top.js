@@ -1,17 +1,11 @@
-const $btnTop = document.querySelector(".btn-toTop");
+$(document).ready(() => {
+	toTop();
 
-myFunction();
+	window.onscroll = function() {
+		toTop();
+	};
 
-window.onscroll = function() {
-	myFunction()
-};
-
-// Função para verificar se o usuario desceu a pagina a 200px do Top
-function myFunction() {
-	if(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-		$btnTop.style.display = "block";
+	function toTop() {
+		(document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) ? $('.btn-toTop').show() : $('.btn-toTop').hide(); 
 	}
-	else {
-		$btnTop.style.display = "none";
-	}
-}
+})

@@ -79,3 +79,20 @@
 	display: inline-block;
 	font-size: 2.2rem;
 }
+
+.on {
+	background-color: #FF9933;
+	color: #fff;
+}
+
+.hide {
+	width: 0;
+	height: 0;
+	visibility: hidden;
+	transition: all .5s;
+	overflow: hidden;
+}
+
+a[data-filter*="all"] {
+	transition: all .5s;
+}
